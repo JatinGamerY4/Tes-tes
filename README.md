@@ -5,8 +5,8 @@
   <title>Play Audio + Muted Video Icon</title>
   <style>
     #myVideo {
-      width: 160px;
-      height: 120px;
+      width: 200px;
+      height: 160px;
       display: block;
       margin-top: 20px;
       pointer-events: none; /* Prevents user from clicking */
