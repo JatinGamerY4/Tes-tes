@@ -1,40 +1,39 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Play Audio and Video</title>
+  <title>Video Icon Controlled by Buttons</title>
+  <style>
+    /* Make video look like an icon */
+    #myVideo {
+      width: 120px;
+      height: 90px;
+      display: block;
+      margin-top: 20px;
+      pointer-events: none; /* disables user interaction */
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to My GitHub Page</h1>
 
-  <button onclick="playMedia()">Play Audio & Video</button>
-  <button onclick="stopMedia()">Stop Audio & Video</button>
+  <button onclick="playVideo()">Play</button>
+  <button onclick="stopVideo()">Stop</button>
 
-  <br><br>
-
-  <video id="myVideo" width="640" controls>
+  <!-- Muted, small video -->
+  <video id="myVideo" muted loop>
     <source src="Crystal Castles - KEROSENE (Lyrics).mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <audio id="myAudio">
-    <source src="Crystal Castles KEROSENE Official.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
   <script>
     const video = document.getElementById("myVideo");
-    const audio = document.getElementById("myAudio");
 
-    function playMedia() {
-      audio.play();
+    function playVideo() {
       video.play();
     }
 
-    function stopMedia() {
-      audio.pause();
-      audio.currentTime = 0;
-
+    function stopVideo() {
       video.pause();
       video.currentTime = 0;
     }
