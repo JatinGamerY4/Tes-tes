@@ -21,13 +21,13 @@
 
   <!-- Muted Video -->
   <video id="myVideo" muted loop>
-    <source src="Crystal Castles - KEROSENE (Lyrics).mp4" type="video/mp4">
+    <source src="Nomi XD - BLAH! (Official Audio).mp3" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <!-- Playable Audio -->
   <audio id="myAudio">
-    <source src="Crystal Castles KEROSENE Official.mp3" type="audio/mpeg">
+    <source src="Nomi XD - BLAH! (Official Audio).mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
